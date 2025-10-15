@@ -1,0 +1,17 @@
+CREATE DATABASE nss;
+USE nss;
+
+CREATE TABLE user (
+  sno INT AUTO_INCREMENT PRIMARY KEY,
+  firstname VARCHAR(100),
+  lastname VARCHAR(100),
+  email VARCHAR(255) UNIQUE,
+  password VARCHAR(255)
+);
+
+CREATE TABLE cam (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  camfps VARCHAR(20),
+  camurl VARCHAR(255),
+  camname VARCHAR(255)
+);
